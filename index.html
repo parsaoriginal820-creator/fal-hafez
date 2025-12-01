@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فال حافظ شبانه</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&family=Niconne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="moon"></div>
+
+    <div class="container">
+        <h1 class="title">فال حافظ</h1>
+        <p class="subtitle">با نیت پاک در دل شب فال بگیر</p>
+
+        <div class="clock">
+            <div class="hand" id="hour"></div>
+            <div class="hand" id="minute"></div>
+            <div class="hand" id="second"></div>
+            <div class="center"></div>
+        </div>
+
+        <div class="calendar">
+            <div class="header">
+                <div id="jalaliDate"></div>
+                <div id="gregorianDate"></div>
+            </div>
+            <table>
+                <thead><tr><th>ش</th><th>ی</th><th>د</th><th>س</th><th>چ</th><th>پ</th><th>ج</th></tr></thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+            <div class="events" id="events"></div>
+        </div>
+
+        <button id="get-fal">بگیر فال</button>
+
+        <div id="fal-card" class="fal-card">
+            <div class="poem" id="poem"></div>
+            <div class="taavil" id="taavil"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
