@@ -31,7 +31,7 @@ function toJalali(gy,gm,gd){
 const now=new Date();
 const j=toJalali(now.getFullYear(),now.getMonth()+1,now.getDate());
 const months=['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
-document.getElementById('jalaliDate').textContent=`${j.jd} ${months[j.jm-1]} ${j.jy}`;
+document.getElementById('jalaliDate').innerHTML = `<div style="font-size:2.4rem;font-weight:bold">${months[j.jm-1]} ${j.jy}</div><div style="font-size:1.2rem;margin-top:6px;opacity:0.9">${j.jd} ${months[j.jm-1]} ${j.jy}</div>`;
 document.getElementById('gregorianDate').textContent=now.toLocaleDateString('fa-IR');
 
 // جدول تقویم
@@ -67,4 +67,5 @@ document.getElementById('get-fal').onclick=()=>{
     let i=0;
     function type(){if(i<f.p.length){poem.innerHTML+=f.p[i]==='\n'?'<br>':f.p[i];i++;setTimeout(type,70);}else taavil.textContent=f.t;}
     type();
+
 };
